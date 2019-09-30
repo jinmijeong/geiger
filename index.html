@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>geiger</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Sans+KR:100,300,400,500,700,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <style>
+        #fp-nav ul li a span,
+        .fp-slidesNav ul li a span {
+            opacity: .5;
+            background:#fff;
+        }
+        #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="headerWrap">
+            <p>header</p>
+        </header>
+        <div id="mainWrap">
+            <div id="fullpage">
+                <div id="section01" class="section">
+                    <div class="main_video">
+                        <div id="player">
+                            <iframe width="1080" height="1920" src="https://www.youtube.com/embed/IqNvzxzzb_c?autoplay=1&amp;loop=1;playlist=IqNvzxzzb_c;mute=1;controls=0;showinfo=0;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            <div class="uncontrolled"></div>
+                        </div>
+                        <div class="section_txt tc">
+                            <span class="sec_item sub_tit slide_up">novelty</span>
+                            <h3 class="sec_item sec_tit">
+                                RM 50-04 KIMI RAIKKONEN
+                            </h3>
+                            <p class="sec_item sec_txt">
+                                The absolute chronograph perfection
+                            </p>
+                            <a href="#" class="sec_item sec_btn">
+                                Discover the watch
+                            </a>
+                        </div>
+                    </div>
+                    <div data-menuanchor="secondPage"><a href="#secondPage" class="scroll_down"><span></span><span></span><span></span></a></div>
+                </div>
+                <div id="section02" class="section">
+                    <div class="main_video">
+                        <div id="player">
+                            <iframe width="1080" height="1920" src="https://www.youtube.com/embed/IqNvzxzzb_c?autoplay=1&amp;loop=1;playlist=IqNvzxzzb_c;mute=1;controls=0;showinfo=0;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            <div class="uncontrolled"></div>
+                        </div>
+                        <div class="section_txt tc">
+                            <span class="sec_item sub_tit slide_up">novelty</span>
+                            <h3 class="sec_item sec_tit">
+                                RM 50-04 KIMI RAIKKONEN
+                            </h3>
+                            <p class="sec_item sec_txt">
+                                The absolute chronograph perfection
+                            </p>
+                            <a href="#" class="sec_item sec_btn">
+                                Discover the watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/fullpage.js"></script>
+<script>
+    $(document).ready(function() {
+        var myFullpage = new fullpage('#fullpage', {
+            //options here
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+            autoScrolling: true,
+            scrollHorizontally: true,
+            navigation: true,
+            navigationPosition: 'right',
+            scrollingSpeed: 1000,
+            loopBottom: true
+        });
+        
+        
+       
+
+    })
+</script>
+
+</html>

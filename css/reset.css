@@ -6,7 +6,6 @@ img,fieldset {border:none;}
 ul,ol,li {list-style:none;}
 strong,em,address {font-style:normal; font-weight:normal;}
 table {border-collapse:collapse;}
-*, input, :before, :after{box-sizing:border-box;}
 /* common */
 .clearFix:after {
     content:"";

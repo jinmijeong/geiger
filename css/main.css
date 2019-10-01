@@ -4,6 +4,12 @@
     position: relative;
     font-family: 'Open Sans', 'Noto Sans KR', 'Nanum Gothic', sans-serif;
 }
+.scroll{
+    position: fixed; 
+	overflow-y: hidden !important;
+	width: 100%;
+    top:0;
+}
 
 /* animation */
 .section.active .section_txt .sec_item {
@@ -61,11 +67,11 @@
 #headerWrap{
     position: fixed;
     top:0;
-    height:50px;
+    height:70px;
     display: block;
     width:100%;
     color:#fff;
-    z-index: 100;
+    z-index: 200;
 }
 .header{
     display: flex;
@@ -188,6 +194,68 @@
 }
 .header .search a i{
     color:#fff;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+        z-index: 300;
+}
+.sidebar.active .sidebar_bg{
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar .sidebar_bg{
+      background: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: .6s cubic-bezier(.215,.61,.355,1);
+    opacity: 0;
+    visibility: hidden;  
+}
+.sidebar .sidebar_content{
+        width: 600px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+}
+.sidebar_content .sidebar_white,.sidebar_content .sidebar_wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.sidebar_content .sidebar_white{
+        background: #fff;
+    z-index: 4;
+    transition: all .4s ease;
+}
+.active .sidebar_content .sidebar_white{
+    transform: translateX(100%);
+}
+.active .sidebar_content .sidebar_wrapper{
+    transform: translateX(100%);
+}
+.sidebar_content .sidebar_wrapper{
+    background: #1e1e20;
+    z-index: 5;
+    padding-left: 5vw;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: all .5s ease;
+    transition-delay: .1s;
 }
 
 /* main container */

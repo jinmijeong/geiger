@@ -39,6 +39,19 @@
                 <a href="index.html" class="main_logo"><img src="img/5f43bda.svg" alt=""></a>
                 <div class="search"><a href="#"><i class="material-icons">search</i></a></div>
             </div>
+            <div class="sidebar">
+                <div class="sidebar_bg"></div>
+                <div class="sidebar_content">
+                    <div class="sidebar_white"></div>
+                    <div class="sidebar_wrapper">
+                        <div class="nav_wrap">
+                            <ul class="nav_list">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <div id="mainWrap">
             <div id="fullpage">
@@ -107,8 +120,13 @@
         
         $('.menu').click(function(){
             $('.burger-btn',this).toggleClass('close')
+            $('.sidebar').toggleClass('active')
+            $('body').toggleClass('scroll')
         })
-        
+        $('.sidebar_bg').click(function(){
+            $('.burger-btn').removeClass('close')
+            $('.sidebar').removeClass('active')
+        })
        
 
     })

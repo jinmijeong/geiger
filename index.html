@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>geiger</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/main.css">
@@ -14,9 +14,13 @@
         #fp-nav ul li a span,
         .fp-slidesNav ul li a span {
             opacity: .5;
-            background:#fff;
+            background: #fff;
         }
-        #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+
+        #fp-nav ul li a.active span,
+        .fp-slidesNav ul li a.active span,
+        #fp-nav ul li:hover a.active span,
+        .fp-slidesNav ul li:hover a.active span {
             opacity: 1;
         }
     </style>
@@ -28,15 +32,15 @@
             <div class="header">
                 <div class="mask"></div>
                 <div class="menu">
-                    <div  class="burger-btn">
-                        <span class="stripe"></span> 
-                        <span class="stripe"></span> 
+                    <div class="burger-btn">
+                        <span class="stripe"></span>
+                        <span class="stripe"></span>
                         <span class="stripe"></span>
                     </div>
                     <div class="label">Menu</div>
                 </div>
-                
-                <a href="index.html" class="main_logo"><img src="img/5f43bda.svg" alt=""></a>
+
+                <a href="index.html" class="main_logo"><img src="img/geiger_logo.png" alt=""></a>
                 <div class="search"><a href="#"><i class="material-icons">search</i></a></div>
             </div>
             <div class="sidebar">
@@ -46,7 +50,41 @@
                     <div class="sidebar_wrapper">
                         <div class="nav_wrap">
                             <ul class="nav_list">
-                                
+                                <li class="nav_item">
+                                    <a href="#">the brand</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">store</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">aaa collection</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">bbb collection</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">ccc collection</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">ddd collection</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">community</a>
+                                </li>
+                            </ul>
+                            <ul class="login_list">
+                                <li>
+                                    <a href="#">Login</a>
+                                </li>
+                                <li>
+                                    <a href="#">Join</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cart</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Shop</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -57,9 +95,8 @@
             <div id="fullpage">
                 <div id="section01" class="section">
                     <div class="main_video">
-                        <div id="player">
-                            
-                            <iframe width="1080" height="1920" src="https://www.youtube.com/embed/lYGhMaTAlnY?autoplay=1&amp;loop=1;playlist=lYGhMaTAlnY;mute=0;controls=0;showinfo=0;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <div id="player1" class="player">
+
                             <div class="uncontrolled"></div>
                         </div>
                         <div class="section_txt tc">
@@ -79,8 +116,8 @@
                 </div>
                 <div id="section02" class="section">
                     <div class="main_video">
-                        <div id="player">
-                            <iframe width="1080" height="1920" src="https://www.youtube.com/embed/LjrtHOrufK4?autoplay=1&amp;loop=1;playlist=LjrtHOrufK4;mute=0;controls=0;showinfo=0;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <div id="player2" class="player">
+
                             <div class="uncontrolled"></div>
                         </div>
                         <div class="section_txt tc">
@@ -99,8 +136,8 @@
                 </div>
                 <div id="section03" class="section">
                     <div class="main_video">
-                        <div id="player">
-                            <iframe width="1080" height="1920" src="https://www.youtube.com/embed/2mbj-jOY2Ek?autoplay=1&amp;loop=1;playlist=2mbj-jOY2Ek;mute=0;controls=0;showinfo=0;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <div id="player3" class="player">
+
                             <div class="uncontrolled"></div>
                         </div>
                         <div class="section_txt tc">
@@ -117,14 +154,129 @@
                         </div>
                     </div>
                 </div>
+                <div id="section04" class="section fp-auto-height">
+                    <footer id="footerWrap">
+                        <div class="footer_inner">
+                            <div class="contents_wrap">
+                                <div class="content_box narrow_area">
+                                    <div class="footer_logo">
+                                        <a href="index.html">
+                                            <img src="img/geiger_logo.png" alt="valence logo 가이거 로고">
+                                        </a>
+                                    </div>
+                                    <ul class="sns_logo">
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon_facebook" viewBox="0 0 32 32">
+                                                    <path fill="#fff" d="M18.56 31.36V17.28h4.48l.64-5.12h-5.12v-3.2c0-1.28.64-2.56 2.56-2.56h2.56V1.28H19.2c-3.84 0-7.04 2.56-7.04 7.04v3.84H7.68v5.12h4.48v14.08h6.4z"></path>
+                                                </svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon_insta" viewBox="0 0 32 32">
+                                                    <path fill="#fff" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"></path>
+                                                    <path fill="#fff" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"></path>
+                                                </svg></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="content_box narrow_area">
+                                    <h3 class="footer_title">SHOP INFO</h3>
+                                    <ul class="info_list">
+                                        <li><a href="#">회사소개</a></li>
+                                        <li><a href="/member/agreement.html">이용약관</a></li>
+                                        <li><a href="/member/privacy.html"><b>개인정보처리방침</b></a></li>
+                                        <li><a href="/shopinfo/guide.html">이용안내</a></li>
+                                    </ul>
+                                </div>
+                                <div class="content_box wide_area">
+                                    <h3 class="footer_title">COMPANY INFO</h3>
+                                    <p>
+                                        법인명(상호) : (주)트랜드메카 <br>
+                                        대표자(성명) : 서대규<br>
+                                        사업자 등록번호 안내 : 113-86-48435 <a href="#none" class="txt-change-mid2" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a><br>
+                                        통신판매업 신고 2016-서울강남02846호
+                                    </p>
+                                </div>
+                                <div class="content_box wide_area">
+                                    <h3 class="footer_title">CUSTOMER CENTER</h3>
+                                    <p>
+                                        전화 : 1599-3735<br>
+                                        팩스 : 02-6455-2581<br>
+                                        주소 : 06107 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층<br>
+                                        구주소 : 06107 서울특별시 강남구 논현동 221-5 엠빌딩 7층<br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="copyright tc">
+                            Copyright (C) 2019 Trendmecca.
+                        </p>
+                    </footer>
+                </div>
             </div>
         </div>
     </div>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="js/fullpage.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script>
-    
+    var options = {
+        id: 207028770,
+        width: 100,
+        loop: true,
+        autoplay: true,
+        background: true,
+        controls: false,
+        muted: true,
+    };
+
+    var player = new Vimeo.Player('player1', options);
+
+    player.setVolume(0);
+
+    player.on('play', function() {
+
+        console.log('played the video!');
+
+    });
+    var options = {
+        id: 121250090,
+        width: 100,
+        loop: true,
+        autoplay: true,
+        background: true,
+        controls: false,
+        muted: true,
+    };
+    var player = new Vimeo.Player('player2', options);
+
+    player.setVolume(0);
+
+    player.on('play', function() {
+
+        console.log('played the video!');
+
+    });
+    var options = {
+        id: 259411563,
+        width: 100,
+        loop: true,
+        autoplay: true,
+        background: true,
+        controls: false,
+        muted: true,
+    };
+    var player = new Vimeo.Player('player3', options);
+
+    player.setVolume(0);
+
+    player.on('play', function() {
+
+        console.log('played the video!');
+
+    });
+
     $(document).ready(function() {
         var myFullpage = new fullpage('#fullpage', {
             //options here
@@ -137,17 +289,17 @@
             scrollingSpeed: 1000,
             loopBottom: true
         });
-        
-        $('.menu').click(function(){
-            $('.burger-btn',this).toggleClass('close')
+
+        $('.menu').click(function() {
+            $('.burger-btn', this).toggleClass('close')
             $('.sidebar').toggleClass('active')
             $('body').toggleClass('scroll')
         })
-        $('.sidebar_bg').click(function(){
+        $('.sidebar_bg').click(function() {
             $('.burger-btn').removeClass('close')
             $('.sidebar').removeClass('active')
         })
-       
+
 
     })
 </script>
